@@ -36,6 +36,9 @@ public class ClassLoaderMethod {
 
     /**
      * Any URL that ends with a ' /' is assumed to refer to a directory.
+     *
+     * Error : Exception in thread "main" java.lang.ClassFormatError: Incompatible magic value 168430090 in class file HelloWorld
+     * 未解决——可能是由于网络传输数据的问题，导致class文件格式有问题。
      * http://www.oracle.com/technetwork/articles/java/classloaders-140370.html
      */
     public void loadFromRemote(){
