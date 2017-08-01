@@ -68,7 +68,7 @@ public class ClassLoaderMethod {
     public static void main(String[] args) {
         ClassLoaderMethod method = new ClassLoaderMethod();
 
-        method.loadFromLocal();
+        //method.loadFromLocal();
 
         method.loadFromRemote();
 

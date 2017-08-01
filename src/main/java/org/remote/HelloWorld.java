@@ -8,7 +8,7 @@ package org.remote;
 public class HelloWorld {
 
     public void print(){
-        System.out.println("Github !");
+        System.out.println("Github World!");
     }
     
 }
