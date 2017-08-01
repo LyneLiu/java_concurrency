@@ -38,12 +38,12 @@ public class ClassLoaderMethod {
      * Any URL that ends with a ' /' is assumed to refer to a directory.
      *
      * Error : Exception in thread "main" java.lang.ClassFormatError: Incompatible magic value 168430090 in class file HelloWorld
-     * 未解决——可能是由于网络传输数据的问题，导致class文件格式有问题。
+     * 已解决：由于github不是类似于ftp文本服务器的协议格式，获取到的文本信息为html文本信息，并不是只有class文件标准文件。
      * http://www.oracle.com/technetwork/articles/java/classloaders-140370.html
      */
     public void loadFromRemote(){
         try{
-            URL url = new URL("https://github.com/LyneLiu/java_concurrency/tree/master/src/main/java/org/remote/");
+            URL url = new URL("http://xx.xx.xx.xx:port/");
             URL[] urls = new URL[]{url};
             ClassLoader classLoader = new URLClassLoader(urls);
             Class clazz = classLoader.loadClass("HelloWorld");
