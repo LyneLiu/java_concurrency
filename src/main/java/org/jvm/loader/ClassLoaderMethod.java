@@ -40,7 +40,7 @@ public class ClassLoaderMethod {
      */
     public void loadFromRemote(){
         try{
-            URL url = new URL("https://github.com/LyneLiu/java_concurrency/tree/master/src/main/java/org/classes/");
+            URL url = new URL("https://github.com/LyneLiu/java_concurrency/tree/master/src/main/java/org/remote/");
             URL[] urls = new URL[]{url};
             ClassLoader classLoader = new URLClassLoader(urls);
             Class clazz = classLoader.loadClass("HelloWorld");
