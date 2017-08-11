@@ -56,24 +56,18 @@ public class ClassLoaderMethod {
         }
     }
 
-    public void loadFromArchive(){
-
-    }
-
-    public void loadFromDB(){
-
-    }
-
-    public void loadFromJavaSource(){
-
-    }
-
     public static void main(String[] args) {
         ClassLoaderMethod method = new ClassLoaderMethod();
 
         //method.loadFromLocal();
 
-        method.loadFromRemote();
+        //method.loadFromRemote();
+
+        if(Boolean.parseBoolean("true"))
+            System.out.println(Boolean.parseBoolean("false"));
+
+        if(Boolean.parseBoolean("false"))
+            System.out.println("result is false");
 
     }
 
